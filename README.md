@@ -1,6 +1,6 @@
 # Custom Navbar
 
-Custom Ready-made Navbar for projects
+Custom Reusable Navbar components for projects
 
 ## First make sure you have installed parcel bundler globally to install parcel-bundler
 
