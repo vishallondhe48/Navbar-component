@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 5vw;
+  @media screen and (min-width: 768px) {
+    margin: 0 10vw;
+  }
+}

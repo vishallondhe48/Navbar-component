@@ -1,0 +1,84 @@
+nav {
+    position: relative;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        #logo {
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            color: #000;
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #255466;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in-out;
+            a {
+                color: #fff;
+                text-transform: capitalize;
+                margin: 2rem 0;
+                font-size: 3rem;
+                margin-left: 15%;
+
+                &:hover {
+                    transform: scale(1.5);
+                    transform-origin: left;
+                    color: #e2952f;
+                    transition: transform 0.5s ease;
+                }
+            }
+        }
+        .active {
+            transform: translateX(0);
+            transition: transform 0.5s ease-in-out;
+        }
+        #toggler {
+            position: relative;
+            background: transparent;
+            border: none;
+            outline: none;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    nav {
+        .wrapper {
+            .nav-links {
+                position: relative;
+                flex-direction: row;
+                transform: translateX(0);
+                height: auto;
+                width: auto;
+                background: transparent;
+
+                a {
+                    color: #000;
+                    margin: 0 1rem;
+                    font-size: 1rem;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+            #toggler {
+                display: none;
+            }
+        }
+    }
+}
